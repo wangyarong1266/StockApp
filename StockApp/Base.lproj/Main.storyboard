@@ -61,17 +61,47 @@
             </objects>
             <point key="canvasLocation" x="921.37404580152668" y="-27.464788732394368"/>
         </scene>
-        <!--View Controller-->
+        <!--Add Stock View Controller-->
         <scene sceneID="4Mn-E7-n0j">
             <objects>
-                <viewController id="4VR-q8-rAD" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="lZ8-uE-kMM">
+                <viewController id="4VR-q8-rAD" customClass="AddStockViewController" customModule="StockApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lZ8-uE-kMM" customClass="ADBannerView">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Stock Symbol" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aBA-Lp-BZb">
+                                <rect key="frame" x="20" y="409" width="353" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cpD-FM-9QS">
+                                <rect key="frame" x="20" y="483" width="353" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="6lX-OA-3Ox"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Add Stock"/>
+                                <connections>
+                                    <action selector="addStockAction:" destination="4VR-q8-rAD" eventType="touchUpInside" id="ZSr-8O-rjY"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="gRr-Dm-gpU"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cpD-FM-9QS" firstAttribute="top" secondItem="aBA-Lp-BZb" secondAttribute="bottom" constant="40" id="4NF-yV-D9b"/>
+                            <constraint firstItem="aBA-Lp-BZb" firstAttribute="centerX" secondItem="lZ8-uE-kMM" secondAttribute="centerX" id="5Sb-AF-kRg"/>
+                            <constraint firstItem="cpD-FM-9QS" firstAttribute="leading" secondItem="gRr-Dm-gpU" secondAttribute="leading" constant="20" id="DPm-oZ-27r"/>
+                            <constraint firstItem="gRr-Dm-gpU" firstAttribute="trailing" secondItem="cpD-FM-9QS" secondAttribute="trailing" constant="20" id="F9V-21-rI0"/>
+                            <constraint firstItem="aBA-Lp-BZb" firstAttribute="leading" secondItem="gRr-Dm-gpU" secondAttribute="leading" constant="20" id="ibj-cp-Aj1"/>
+                            <constraint firstItem="aBA-Lp-BZb" firstAttribute="centerY" secondItem="lZ8-uE-kMM" secondAttribute="centerY" id="oFb-WR-aJm"/>
+                            <constraint firstItem="gRr-Dm-gpU" firstAttribute="trailing" secondItem="aBA-Lp-BZb" secondAttribute="trailing" constant="20" id="sHr-UO-ybU"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="gZS-2Z-KYy"/>
+                    <connections>
+                        <outlet property="txtStock" destination="aBA-Lp-BZb" id="eqg-ty-MAC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hL0-H8-1bD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

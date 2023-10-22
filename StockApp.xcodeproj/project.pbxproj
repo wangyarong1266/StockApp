@@ -13,6 +13,8 @@
 		5C7EFED72AE47660002C5E2E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C7EFED52AE47660002C5E2E /* Main.storyboard */; };
 		5C7EFED92AE47662002C5E2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C7EFED82AE47662002C5E2E /* Assets.xcassets */; };
 		5C7EFEDC2AE47662002C5E2E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C7EFEDA2AE47662002C5E2E /* LaunchScreen.storyboard */; };
+		5C7EFEE62AE48D7D002C5E2E /* AddStockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C7EFEE52AE48D7D002C5E2E /* AddStockViewController.swift */; };
+		5C7EFEE92AE49356002C5E2E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C7EFEE82AE49356002C5E2E /* Constants.swift */; };
 		D070905CC5C8B960C059368D /* Pods_StockApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28A8E1C381FF7F8A266E33E7 /* Pods_StockApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +28,8 @@
 		5C7EFED82AE47662002C5E2E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5C7EFEDB2AE47662002C5E2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5C7EFEDD2AE47662002C5E2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5C7EFEE52AE48D7D002C5E2E /* AddStockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddStockViewController.swift; sourceTree = "<group>"; };
+		5C7EFEE82AE49356002C5E2E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		5E35870F6AB27FFF7FE60963 /* Pods-StockApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StockApp.debug.xcconfig"; path = "Target Support Files/Pods-StockApp/Pods-StockApp.debug.xcconfig"; sourceTree = "<group>"; };
 		8B2DBA38EF34D54E5B8D8473 /* Pods-StockApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StockApp.release.xcconfig"; path = "Target Support Files/Pods-StockApp/Pods-StockApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -63,6 +67,7 @@
 		5C7EFECE2AE47660002C5E2E /* StockApp */ = {
 			isa = PBXGroup;
 			children = (
+				5C7EFEE72AE4932F002C5E2E /* Utils */,
 				5C7EFECF2AE47660002C5E2E /* AppDelegate.swift */,
 				5C7EFED12AE47660002C5E2E /* SceneDelegate.swift */,
 				5C7EFED32AE47660002C5E2E /* ViewController.swift */,
@@ -70,8 +75,17 @@
 				5C7EFED82AE47662002C5E2E /* Assets.xcassets */,
 				5C7EFEDA2AE47662002C5E2E /* LaunchScreen.storyboard */,
 				5C7EFEDD2AE47662002C5E2E /* Info.plist */,
+				5C7EFEE52AE48D7D002C5E2E /* AddStockViewController.swift */,
 			);
 			path = StockApp;
+			sourceTree = "<group>";
+		};
+		5C7EFEE72AE4932F002C5E2E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				5C7EFEE82AE49356002C5E2E /* Constants.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		5D555D10D0DD9174243FBFC0 /* Pods */ = {
@@ -206,9 +220,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C7EFEE92AE49356002C5E2E /* Constants.swift in Sources */,
 				5C7EFED42AE47660002C5E2E /* ViewController.swift in Sources */,
 				5C7EFED02AE47660002C5E2E /* AppDelegate.swift in Sources */,
 				5C7EFED22AE47660002C5E2E /* SceneDelegate.swift in Sources */,
+				5C7EFEE62AE48D7D002C5E2E /* AddStockViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
